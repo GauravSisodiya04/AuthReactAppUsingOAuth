@@ -2,14 +2,21 @@ import { Link, NavLink } from "react-router-dom";
 
 function Nav() {
   return (
-    <ul>
-      <li>
-        <Link to="/">Home</Link>{" "}
-      </li>
-      <li>
-        <Link to="/profile">Profile</Link>
-      </li>
-    </ul>
+    <nav>
+      <ul className="nav-links">
+        <li className="link-item">
+          <Link to="/">Home</Link>
+        </li>
+        <li>
+          <Link to="/profile" className="link-item">
+            Profile
+          </Link>{" "}
+        </li>
+        <li className="link-item">
+          <Link to="/">About Us</Link>
+        </li>
+      </ul>
+    </nav>
   );
 }
 
