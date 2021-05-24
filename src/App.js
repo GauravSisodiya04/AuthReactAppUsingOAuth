@@ -1,10 +1,15 @@
 import "./styles.css";
+import { Route } from "react-router-dom";
+import Home from "./Home";
+import Profile from "./Profile";
+import Nav from "./Nav";
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <Nav />
+      <Route path="/" exact component={Home} />
+      <Route path="/profile" component={Profile} />
     </div>
   );
 }
